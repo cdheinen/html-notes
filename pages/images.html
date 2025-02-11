@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Images</title>
+    </head>
+    <body>
+        <!-- Link to return to homepage -->
+        <a href="../index.html">Return Home</a>
+        
+        <!-- HTML Images -->
+        <h1>Images</h1>
+
+        <p>
+            Images can be displayed in HTML using the 'img' element. Note that this is a
+            void element, meaning it does not need a closing tag because it is naturally
+            empty and only defined using the element attributes.
+        </p>
+
+        <p>
+            The image that will be displayed is defined within the 'src' attribute of the 
+            'img' element. Similar to the 'href' attribute of an anchor element, the 'src'
+            attribute specifies the location of the image to be displayed, which can be both
+            an absolute link or a relative link.
+        </p>
+
+        <p>
+            Here is an example of an absolute link image:
+        </p>
+
+        <p><img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project logo"></p>
+
+        <p>
+            Here is an example of a relative image. Note that this image is stored
+            locally within the 'images' directory:
+        </p>
+
+        <p><img src="../images/dog.jpg" alt="random dog"></p>
+        
+        <!-- Alt Attribute -->
+        <h3>Alt Attribute</h3>
+        <p>
+            The 'alt' attribute of an 'img' element is used to provide alternate text
+            for an image. This text will be displayed in place of an image if the image
+            is unable to be loaded. It is also used for accessibility to describe the
+            image to visually impared users.
+        </p>
+
+        <p>
+            Here is an example image element where the image cannot be loaded. Note that
+            the browser simply displays the value of the 'alt' attribute, which is set to
+            'test alternative image text' in this example.
+        </p>
+
+        <p><img src="/path/that/does/not/exist" alt="test alternative image text"></p>
+
+        <!-- Size Attributes -->
+        <h3>Size Attributes</h3>
+
+        <p>
+            The 'height' and 'width' attributes can be used within the 'img' element to
+            ensure that the image is rendered with proper sizing and ratios.
+        </p>
+
+        <p>
+            Here is The Odin Project logo with alternate sizing:
+        </p>
+
+        <p><img src="https://www.theodinproject.com/mstile-310x310.png" alt="The Odin Project logo" height="100" width="310"></p>
+
+        <!-- Helpful Links -->
+        <h1>Helpful Links</h1>
+        <ul>
+            <li><a href="https://www.theodinproject.com/lessons/foundations-links-and-images" target="_blank" rel="'noreferrer">The Odin Project: Links and Images</a></li>
+        </ul>
+    </body>
+</html>

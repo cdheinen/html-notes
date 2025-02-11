@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Links</title>
+    </head>
+    <body>
+        <!-- Link to return to homepage -->
+        <a href="../index.html">Return Home</a>
+
+        <!-- HTML Links -->
+        <h1>Links</h1>
+
+        <!-- Anchor Elements -->
+        <h2>Anchor Elements</h2>
+
+        <p>
+            An anchor element is defined using the 'a' tag. The 'href' (hypertext reference) 
+            attribute defines the destination of the link. The following link will take you
+            to The Odin Project About page.
+        </p>
+
+        <p>Example Link: <a href="https://www.theodinproject.com/about" rel="'noreferrer">About The Odin Project</a></p>
+
+        <!-- Target Attribute -->
+        <h3>Target Attribute</h3>
+
+        <p>
+            The above link opens The Odin Project About page in the current tab of the browser. 
+            To open the link in a new tab, we need to add the 'target' attribute. If the 'target'
+            attribute is not specified, it will take on the '_self' value by default. Which will
+            open the link in the current tab. To open the link in a new tab (or window), set the
+            'target' attribute to '_blank'.
+        </p>
+
+        <p>
+            Example Link (that will open in new tab): 
+            <a href="https://www.theodinproject.com/about" target="_blank" rel="'noreferrer">About The Odin Project</a>
+        </p>
+
+        <!-- Rel Attribute -->
+        <h3>Rel Attribute</h3>
+
+        <p>
+            The 'rel' attribute is used to describe the relationship between the current page and
+            the linked document. The 'noopener' attribute ensures that a link opened in a new tab 
+            or window cannot interact with or access the original page. Without it, the new page
+            can use JavaScript to manipulate the original page, which is a security risk.
+        </p>
+
+        <p>
+            The 'rel' attribute can also be set to 'noreferrer', which will prevent new pages
+            from knowing where the user came from by hiding the referrer, in addition to implementing
+            the behavior provided by 'noopener'.
+        </p>
+
+        <!-- Types of Links -->
+        <h2>Types of Links</h2>
+
+        <h3>Absolute Links</h3>
+
+        <p>
+            An absolute link is a link to pages on other websites on the internet.
+            An absolute link typically takes the form 'schema://domain/path'.
+        </p>
+
+        <h3>Relative Links</h3>
+
+        <p>
+            A relative link is a link to pages on our own website. Relative links do
+            not include a domain because it assumes that the domain is the same as the
+            current page. Here is an example relative link that will take you back to
+            the homepage: <a href="../index.html">Homepage</a>.
+        </p>
+
+        <!-- Helpful Links -->
+        <h1>Helpful Links</h1>
+        <ul>
+            <li><a href="https://www.theodinproject.com/lessons/foundations-links-and-images" target="_blank" rel="'noreferrer">The Odin Project: Links and Images</a></li>
+        </ul>
+    </body>
+</html>
